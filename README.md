@@ -1,1 +1,1 @@
-# Descriptive-Analytics_Visualization_and_Decision-Modeling-for-Business-Analytics
+# NAU BAN 542: Descriptive Analytics, Visualization, and Decision Modeling for Business Analytics
