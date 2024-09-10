@@ -8,13 +8,14 @@ d = read.csv("https://raw.githubusercontent.com/cc3569/Descriptive-Analytics_Vis
 d_filter = d %>% filter(Year==2024 & quarter==1)
 
 #Takes first sample of 250 observations and places it into a csv
-d_sample = sample(d_filter, 250, replace = FALSE)
-write.csv(d_sample, "C:/BAN 542/sample1_CAR_2024q1")
+set.seed(123)
+d_sample = sample(d_filter, size = 250, replace = FALSE)
+write.csv(d_sample, "C:/BAN 542/sample1_CAR_2024q1.csv")
 
 #Takes second sample of 250 observations and places it into another csv
-d_sample_2 = sample(d_filter, 250, replace = FALSE)
-write.csv(d_sample, "C:/BAN 542/sample2_CAR_2024q1")
+d_sample_2 = sample(d_filter, size = 250, replace = FALSE)
+write.csv(d_sample_2, "C:/BAN 542/sample2_CAR_2024q1.csv")
 
 #Takes third sample of 250 observations and places it into another csv
-d_sample_3 = sample(d_filter, 250, replace = FALSE)
-write.csv(d_sample, "C:/BAN 542/sample3_CAR_2024q1")
+d_sample_3 = sample(d_filter, size = 250, replace = FALSE)
+write.csv(d_sample_3, "C:/BAN 542/sample3_CAR_2024q1.csv")
