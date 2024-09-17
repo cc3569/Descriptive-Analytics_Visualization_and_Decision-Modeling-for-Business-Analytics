@@ -202,3 +202,20 @@ desc.stats.marketshare3 = data %>%
 
 #Remove nulls
 desc.stats.marketshare3 = na.omit(desc.stats.marketshare3)
+
+#Write to CSV files
+write.csv(desc.stats.fare, "C:/BAN 542/desc_stats_fare.csv")
+write.csv(desc.stats.fare2, "C:/BAN 542/desc_stats_fare2.csv")
+write.csv(desc.stats.fare3, "C:/BAN 542/desc_stats_fare3.csv")
+
+write.csv(desc.stats.miles, "C:/BAN 542/desc_stats_miles.csv")
+write.csv(desc.stats.miles2, "C:/BAN 542/desc_stats_miles2.csv")
+write.csv(desc.stats.miles3, "C:/BAN 542/desc_stats_miles3.csv")
+
+write.csv(desc.stats.passengers, "C:/BAN 542/desc_stats_passengers.csv")
+write.csv(desc.stats.passengers2, "C:/BAN 542/desc_stats_passengers2.csv")
+write.csv(desc.stats.passengers3, "C:/BAN 542/desc_stats_passengers3.csv")
+
+write.csv(desc.stats.marketshare, "C:/BAN 542/desc_stats_marketshare.csv")
+write.csv(desc.stats.marketshare2, "C:/BAN 542/desc_stats_marketshare2.csv")
+write.csv(desc.stats.marketshare3, "C:/BAN 542/desc_stats_marketshare3.csv")
