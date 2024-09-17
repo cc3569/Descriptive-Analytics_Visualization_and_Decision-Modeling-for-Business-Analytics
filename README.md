@@ -6,5 +6,5 @@
 
 ### Supplemental Data:
 U.S. Bureau of Transportation Statistics - Airline Codes Table: https://www.bts.gov/topics/airlines-and-airports/airline-codes
-Federal Reserve Economic Database CPI (CPIAUCSL) (Q4 2023 = 100): https://fred.stlouisfed.org/series/CPIAUCSL
 
+Federal Reserve Economic Database CPI (CPIAUCSL) (Q4 2023 = 100): https://fred.stlouisfed.org/series/CPIAUCSL
