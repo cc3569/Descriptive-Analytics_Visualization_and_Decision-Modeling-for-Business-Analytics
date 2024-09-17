@@ -53,12 +53,17 @@ ggplot(fare.time.data) +
   scale_y_continuous(labels = label_dollar(accuracy = 1), limits = c(0, NA),
                      breaks = seq(0, 360, by = 20)) +
   theme_bw() +
+  theme(aspect.ratio = 9/16) +
   labs(title = "Mean and Median Real Average Fares by Year and Quarter",
        subtitle = "Source: Department of Transportation Consumer Airfare Report\n(In 2023 Q4 Inflation Adjusted U.S. Dollars)",
        caption = "Analysis and Visualization by Cole T. Catron & Ella Buxton, 2024",
        x = "Year & Quarter", y = "Mean/Median Average Fares (in U.S. Dollars ($))") +
   scale_color_manual(values = c("Mean" = "navyblue", "Median" = "darkorange"),  # Custom colors for the lines
                      name = "Legend")
+
+#Save plot as PNG file
+ggsave("C:/BAN 542/fare_time_plot.png", width = 16, height = 9, units = "in", dpi = 300)
+
 
 #Time series plot for mean and median nonstop market miles by year and quarter
 ggplot(miles.time.data) +
@@ -68,12 +73,17 @@ ggplot(miles.time.data) +
   scale_y_continuous(limits = c(0, NA),
                      breaks = seq(0, 1500, by = 250)) +
   theme_bw() +
+  theme(aspect.ratio = 9/16) +
   labs(title = "Mean and Median Nonstop Market Miles by Year and Quarter",
        subtitle = "Source: Department of Transportation Consumer Airfare Report",
        caption = "Analysis and Visualization by Cole T. Catron & Ella Buxton, 2024",
        x = "Year & Quarter", y = "Mean/Median Non-Stop Market Miles") +
   scale_color_manual(values = c("Mean" = "navyblue", "Median" = "hotpink"),  # Custom colors for the lines
                      name = "Legend")
+
+#Save plot as PNG file
+ggsave("C:/BAN 542/miles_time_plot.png", width = 16, height = 9, units = "in", dpi = 300)
+
 
 #Time series plot for mean and median daily passenger loads by Year and Quarter
 ggplot(passengers.time.data) +
@@ -83,12 +93,16 @@ ggplot(passengers.time.data) +
   scale_y_continuous(limits = c(0, NA),
                      breaks = seq(0, 900, by = 100)) +
   theme_bw() +
+  theme(aspect.ratio = 9/16) +
   labs(title = "Mean and Median Daily Passenger Load by Year and Quarter",
        subtitle = "Source: Department of Transportation Consumer Airfare Report",
        caption = "Analysis and Visualization by Cole T. Catron & Ella Buxton, 2024",
        x = "Year & Quarter", y = "Mean/Median Number of Passengers Per Day") +
   scale_color_manual(values = c("Mean" = "forestgreen", "Median" = "darkred"),  # Custom colors for the lines
                      name = "Legend")
+
+#Save plot as PNG file
+ggsave("C:/BAN 542/passenger_time_plot.png", width = 16, height = 9, units = "in", dpi = 300)
 
 #Time series plot for the mean and median primary carrier market share
 ggplot(marketshare.time.data) +
@@ -99,9 +113,13 @@ ggplot(marketshare.time.data) +
                      limits = c(0, NA),
                      breaks = seq(0, 1, by = 0.1)) +
   theme_bw() +
+  theme(aspect.ratio = 9/16) +
   labs(title = "Mean and Median Market Share (Primary Airline Carrier) by Year and Quarter",
        subtitle = "Source: Department of Transportation Consumer Airfare Report",
        caption = "Analysis and Visualization by Cole T. Catron & Ella Buxton, 2024",
        x = "Year & Quarter", y = "Mean/Median Market Share For Primary Carrier (%)") +
   scale_color_manual(values = c("Mean" = "cyan", "Median" = "navyblue"),  # Custom colors for the lines
                      name = "Legend")
+
+#Save plot as PNG file
+ggsave("C:/BAN 542/marketshare_time_plot.png", width = 16, height = 9, units = "in", dpi = 300)
